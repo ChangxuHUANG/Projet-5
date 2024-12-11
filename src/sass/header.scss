@@ -1,0 +1,35 @@
+
+.navContainer{
+padding: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%; 
+  margin: auto;
+
+
+}
+
+.linkContainer{
+display: flex;
+  flex-direction: row;
+  gap: 15px;
+  justify-content: space-between;
+} 
+.linkContainer a {
+   color: black;
+   text-decoration: none;
+}
+
+.linkContainer a.active-link {
+    text-decoration: underline; 
+}
+
+
+/* Small devices (phones, less than 768px) */
+@media (max-width: 767.98px) and (min-width:320px){
+.navContainer img{
+    width: 45%;
+    height: 47px;
+}
+}

@@ -1,0 +1,69 @@
+
+
+$color-primary: #FF6060;
+ 
+@mixin linkFiche {
+  display: inline-block; 
+  width: 340px; 
+ }
+
+@mixin homePhoto {
+  height: 223px;
+  width: 90%;
+  border-radius: 25px;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, .4)),url('../images/HomePhoto.png');
+  
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  font-size: 48px;
+  background-size: cover;
+  background-position: center;
+  margin: auto; 
+ }
+
+@mixin aproposPhoto{
+  border-radius: 25px;
+  background-image: url('../images/Paysage.png'); 
+  /*background-size: cover;*/
+  background-position: center;
+  height: 223px;
+  width: 85%;
+  margin: auto;
+  margin-bottom: 10px;
+}
+@mixin infoBar{
+  width: 70%;
+  height: 50px;
+  color: white;
+  background-color: $color-primary;     
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  
+}
+@mixin btnFleche{
+  color: azure;
+  padding-right: 5px;
+  font-size:larger;
+  transition:transform 0.3s ease-in-out;
+}
+@mixin barPresentation{
+  
+  height: 50px;
+  color: white;
+  background-color: $color-primary;  
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+
+ 

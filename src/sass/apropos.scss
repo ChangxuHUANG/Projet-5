@@ -1,0 +1,47 @@
+@import './index.scss';
+
+
+.infoSite .critere {
+    @include infoBar  
+}
+.infoSite .infoZone { 
+    width: 70%;
+    height: 50px;
+    text-align:justify;
+    
+}
+.infoSite {
+   display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    width: 80%;
+    
+}
+.infoSite .btnFleche{
+    @include btnFleche 
+}
+
+
+
+.aproposContainer {
+    display: flex;
+    flex-direction: column;
+    
+    
+;
+    
+    
+}
+
+.aproposPhoto {
+        
+    
+    @include aproposPhoto
+    }
+
+
+
+
+
+

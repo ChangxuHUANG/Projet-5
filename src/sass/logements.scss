@@ -1,0 +1,196 @@
+@import './index.scss';
+
+.information1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 86%;
+    margin: auto;
+}
+.partie1{
+    display: flex;
+    flex-direction: column;
+}
+ul.tags{
+    list-style-type: none;
+    padding-left: 0;
+}
+
+ul.tags li{
+    display: inline-block;
+    margin-right: 10px;
+    color: azure;
+    background-color: $color-primary; 
+    border-radius: 10px;
+    width: 115px;
+    height: 25px;
+    font-size: small;
+    text-align: center;
+     line-height: 25px;
+}
+.partie2 .nomHost {
+    width: 64px;
+    height: 64px;
+    
+    display: flex;
+    flex-wrap: wrap; 
+    color: $color-primary;
+    text-align: center;
+    line-height: 33px;
+
+}
+.host {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 10px;
+}
+.partie2 img{
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: inline-block;
+}
+.rating{
+    margin-top: 10px;
+    gap: 4px;
+    display: flex;
+    justify-content: end;
+
+}
+.etoileRouge{
+color: $color-primary;
+}
+.etoileGris{
+color: grey; 
+}
+
+.information2{
+    width: 86%;
+    margin: auto;
+}
+
+.infoPrecise{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+.zoneInfo{
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+}
+.barPresentation{
+    @include barPresentation
+}
+.barPresentation span{
+    padding-left: 5px;
+}
+.btnFleche{
+    @include btnFleche
+}
+.infoPresentation {
+    width: 100%; 
+    height: 200px;
+    text-align:left;
+
+}
+.infoPresentation ul{
+    list-style-type: none;
+    padding: 0;
+    margin-top: 0;
+}
+.infoPresentation {
+    padding-left: 5px; 
+   }
+
+.infoPresentation li{
+    padding-left: 5px; 
+   }
+
+@media (max-width: 767.98px) and (min-width:320px){
+    .partie1 h2{
+        font-size: medium;
+        margin-bottom: 0;
+    }
+    .partie1 p {
+        
+        margin-bottom: 0;
+    }
+    .information1 {
+        display: flex;
+        flex-direction: column;    
+        width: 89%;
+        
+    }
+    ul.tags {
+        display: flex;
+        flex-direction: row;
+    }
+    ul.tags li{
+        width: 84px;
+       height: 18px;
+       font-size: smaller;
+       
+       line-height: 18px;
+    }
+    .partie2 .nomHost {
+        width: 63px;
+        height: 33px;
+        line-height: 15px;
+        text-align:end;
+        margin-right: 8px;
+        font-size: 15px;
+    }
+    .host {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-top: 10px;
+    }
+    .partie2 img{
+        width: 35px;
+        height: 35px;        
+    }
+    .partie2 {
+        display: flex;
+        flex-direction:row-reverse;
+        justify-content: space-between;
+        margin-bottom: 10px;
+
+    }
+    .rating {
+        font-size: 13px;
+        margin-top: 17px;
+    }
+    .infoPrecise{
+        display: flex;
+        flex-direction: column;
+    
+    
+        
+    }
+    .information2{
+        width: 89%;
+    }
+    .zoneInfo{
+        width: 100%;
+    }
+    .barPresentation{
+       height: 30px;
+       font-size: 15px;
+       margin-bottom: 15px;
+    }
+    .btnFleche{
+        font-size: 15px;
+    }
+   .infoPresentation {
+    height: 150px;
+    overflow: auto;
+   }
+   
+
+}

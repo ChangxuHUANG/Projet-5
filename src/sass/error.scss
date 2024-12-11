@@ -1,0 +1,21 @@
+@import './index.scss';
+
+.errorContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px; 
+}
+
+
+.error{ 
+   color: $color-primary;
+   font-size:288px;
+}
+h2{
+    color: $color-primary;
+   
+}
+.Link{
+    font-size: small;
+}

@@ -86,8 +86,8 @@ function Logements() {
                 <span>Description</span>
 
                 <FontAwesomeIcon
-                  className="btnFleche"
-                  icon={isOpen1 ? faChevronUp : faChevronDown}
+                  className={`btnFleche ${isOpen1 ? "active" : ""}`}
+                  icon={faChevronUp}
                 />
               </div>
 
@@ -105,8 +105,8 @@ function Logements() {
                 <span>Équipement</span>
 
                 <FontAwesomeIcon
-                  className="btnFleche"
-                  icon={isOpen2 ? faChevronUp : faChevronDown}
+                  className={`btnFleche ${isOpen2 ? "active" : ""}`}
+                  icon={faChevronUp}
                 />
               </div>
 

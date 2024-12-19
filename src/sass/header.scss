@@ -4,7 +4,7 @@ padding: 30px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 90%; 
+  width: 86%; 
   margin: auto;
 
 
@@ -31,5 +31,11 @@ display: flex;
 .navContainer img{
     width: 45%;
     height: 47px;
+}
+.navContainer {
+    width: 89%; 
+    padding: 0;
+    margin-bottom: 15px;
+    margin-top: 10px;
 }
 }

@@ -8,6 +8,7 @@ import Apropos from './pages/Apropos';
 import Error from './pages/Error'; 
 import Header from './components/Header';
 import Footer from './components/Footer';
+import "../src/sass/base.scss" 
 
 
 const root = ReactDOM.createRoot(document.getElementById("root"));

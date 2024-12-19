@@ -4,12 +4,6 @@ import '../../sass/fichierList.scss'
 
 function FichierList (){  
 
-    const nomsEtIds = fichierList.map((logement) => {
-        return {
-          id: logement.id,
-          title: logement.title
-        };
-      })
 
     return (
         <div className="fichiers">

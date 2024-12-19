@@ -1,0 +1,545 @@
+@charset "UTF-8";
+.infoSite .critere {
+  width: 70%;
+  height: 50px;
+  color: white;
+  background-color: #FF6060;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.critere span {
+  padding-left: 5px;
+}
+
+.infoSite .infoZone {
+  width: 70%;
+  height: 50px;
+  text-align: justify;
+}
+
+.infoSite {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  width: 80%;
+}
+
+.infoSite .btnFleche {
+  color: azure;
+  padding-right: 10px;
+  font-size: 17px;
+  transition: transform 0.3s ease-in-out;
+  transform-origin: center center;
+  display: inline-block;
+}
+
+.infoSite .btnFleche.active {
+  transform: translateX(-20%) rotate(180deg);
+}
+
+.aproposContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.aproposPhoto {
+  border-radius: 25px;
+  background-image: url("../images/Paysage.png");
+  /*background-size: cover;*/
+  background-position: center;
+  height: 223px;
+  width: 85%;
+  margin: auto;
+  margin-bottom: 10px;
+}
+
+/* Small devices (phones, less than 768px) */
+@media (max-width: 767.98px) and (min-width: 320px) {
+  .aproposPhoto {
+    width: 89%;
+    height: 111px;
+    margin-bottom: 20px;
+  }
+  .infoSite {
+    width: 89%;
+  }
+  .infoSite .critere {
+    width: 100%;
+    height: 30px;
+    margin-bottom: 20px;
+  }
+  .infoSite .infoZone { 
+    height: 90px;
+    width: 100%; 
+    
+}
+  
+  .aproposContainer {
+    margin-bottom: 10px;
+  }
+  .errorContainer h2 {
+    font-size: medium;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 80px;
+    margin-top: 50px;
+  }
+  .errorContainer div {
+    font-size: 96px;
+    margin-top: 50px;
+  }
+  .errorContainer {
+    margin-bottom: 40px;
+  }
+  .fichiers {
+    display: flex;
+    flex-direction: column;
+  }
+  .ficheItem {
+    height: 255px;
+  }
+  .ficheItem span {
+    width: 30%;
+  }
+  .FooterContainer div {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 30%;
+  }
+  .FooterContainer{
+    margin-top: 50px;
+}
+  .navContainer img {
+    width: 45%;
+    height: 47px;
+  }
+  .navContainer {
+    width: 89%;
+    padding: 0;
+    margin-bottom: 15px;
+    margin-top: 10px;
+  }
+  .homePhoto {
+    width: 89%;
+    height: 111px;
+    font-size: xx-large;
+    text-align: left;
+    border-radius: 10px;
+    padding-left: 20px;
+  }
+  .partie1 h2 {
+    font-size: medium;
+    margin-bottom: 0;
+  }
+  .partie1 p {
+    margin-bottom: 0;
+  }
+  .information1 {
+    display: flex;
+    flex-direction: column;
+    width: 89%;
+  }
+  ul.tags {
+    display: flex;
+    flex-direction: row;
+  }
+  ul.tags li {
+    width: 84px;
+    height: 18px;
+    font-size: smaller;
+    line-height: 18px;
+  }
+  .partie2 .nomHost {
+    width: 63px;
+    height: 33px;
+    line-height: 15px;
+    text-align: end;
+    margin-right: 8px;
+    font-size: 15px;
+  }
+  .host {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 10px;
+  }
+  .partie2 img {
+    width: 35px;
+    height: 35px;
+  }
+  .partie2 {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  .rating {
+    font-size: 13px;
+    margin-top: 17px;
+  }
+  .infoPrecise {
+    display: flex;
+    flex-direction: column;
+  }
+  .information2 {
+    width: 89%;
+  }
+  .zoneInfo {
+    width: 100%;
+  }
+  .barPresentation {
+    height: 30px;
+    font-size: 15px;
+    margin-bottom: 15px;
+  }
+  .btnFleche {
+    font-size: 15px;
+  }
+  .infoPresentation {
+    height: 150px;
+    overflow: auto;
+  }
+  .showPhoto img {
+    width: 89%;
+    height: 255px;
+  }
+  .showPhoto .btnGauche {
+    font-size: medium;
+  }
+  .showPhoto .btnDroite {
+    font-size: medium;
+  }
+  .showPhoto .numeroPhoto {
+    display: none;
+  }
+
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserra", sans-serif;
+}
+
+.errorContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.error {
+  color: #FF6060;
+  font-size: 288px;
+}
+
+.errorContainer h2 {
+  color: #FF6060;
+}
+
+.errorContainer a {
+  font-size: small;
+  color: black;
+}
+
+
+.lienFiche {
+  display: inline-block;
+  width: 340px;
+}
+
+.ficheItem {
+  height: 340px;
+  width: 100%;
+  display: flex; 
+  align-items: flex-end; 
+  justify-content: left; 
+  color: black;
+  font-size: 16px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+  margin-bottom: 20px;
+  overflow: hidden; 
+}
+
+.coverPhoto {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.ficheItem span {
+  position: absolute;
+  margin-bottom: 15px;
+  margin-left: 8px;
+  display: inline-block;
+  width: 15%;
+  color: black;
+}
+
+.fichiers {
+  width: 90%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 15px;
+  grid-row-gap: 15px;
+  justify-items: center; 
+  align-items: center;
+  border-radius: 25px;
+  background-color: #f6f6f6;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.fichiers a {
+  text-decoration: none;
+}
+
+
+.FooterContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-color: black;
+  height: 209px;
+  width: 100%;
+}
+
+.ImgContainer {
+  width: 122px;
+  height: 39.4px;
+  display: block;
+}
+
+.FooterContainer div {
+  color: white;
+}
+
+.navContainer {
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 86%;
+  margin: auto;
+}
+
+.linkContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  justify-content: space-between;
+}
+
+.linkContainer a {
+  color: black;
+  text-decoration: none;
+}
+
+.linkContainer a.active-link {
+  text-decoration: underline;
+}
+
+
+.homePhoto {
+  height: 223px;
+  width: 90%;
+  border-radius: 25px;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../images/HomePhoto.png");
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 48px;
+  background-size: cover;
+  background-position: center;
+  margin: auto;
+}
+
+.information1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 86%;
+  margin: auto;
+}
+
+.partie1 {
+  display: flex;
+  flex-direction: column;
+}
+
+ul.tags {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+ul.tags li {
+  display: inline-block;
+  margin-right: 10px;
+  color: azure;
+  background-color: #FF6060;
+  border-radius: 10px;
+  width: 115px;
+  height: 25px;
+  font-size: small;
+  text-align: center;
+  line-height: 25px;
+}
+
+.partie2 .nomHost {
+  width: 64px;
+  height: 64px;
+  display: flex;
+  flex-wrap: wrap;
+  color: #FF6060;
+  text-align: center;
+  line-height: 33px;
+}
+
+.host {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.partie2 img {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: inline-block;
+}
+
+.rating {
+  margin-top: 10px;
+  gap: 4px;
+  display: flex;
+  justify-content: end;
+}
+
+.etoileRouge {
+  color: #FF6060;
+}
+
+.etoileGris {
+  color: grey;
+}
+
+.information2 {
+  width: 86%;
+  margin: auto;
+}
+
+.infoPrecise {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.zoneInfo {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+}
+
+.barPresentation {
+  height: 50px;
+  color: white;
+  background-color: #FF6060;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.barPresentation span {
+  padding-left: 5px;
+}
+
+.btnFleche {
+  color: azure;
+  padding-right: 10px;
+  font-size: 17px;
+  transition: transform 0.3s ease-in-out;
+  transform-origin: center center;
+  display: inline-block;
+}
+
+.zoneInfo .btnFleche.active {
+  transform: translateX(-20%) rotate(180deg);
+}
+
+.infoPresentation {
+  width: 100%;
+  height: 200px;
+  text-align: left;
+}
+
+.infoPresentation ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 0;
+}
+
+.infoPresentation {
+  padding-left: 5px;
+}
+
+.infoPresentation li {
+  padding-left: 5px;
+}
+
+.showPhoto {
+  display: flex;
+  flex-direction: row;
+}
+
+.showPhoto img {
+  width: 86%;
+  height: 415px;
+  margin: auto;
+  align-items: center;
+}
+
+.showPhoto .btnGauche {
+  color: azure;
+  font-size: 60px;
+  position: absolute;
+  top: 40%;
+  left: 11%;
+}
+
+.showPhoto .btnDroite {
+  color: azure;
+  font-size: 60px;
+  position: absolute;
+  top: 40%;
+  right: 11%;
+}
+
+.showPhoto .numeroPhoto {
+  position: absolute;
+  bottom: 32%;
+  left: 50%;
+  color: azure;
+}
+
+
+/*# sourceMappingURL=style.css.map */

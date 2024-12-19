@@ -48,9 +48,11 @@ $color-primary: #FF6060;
 }
 @mixin btnFleche{
   color: azure;
-  padding-right: 5px;
-  font-size:larger;
+  padding-right: 10px; 
+  font-size:17px;
   transition:transform 0.3s ease-in-out;
+  transform-origin: center center; 
+  display: inline-block;
 }
 @mixin barPresentation{
   

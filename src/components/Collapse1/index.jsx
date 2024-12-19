@@ -12,8 +12,8 @@ function Collapse1({ description, titre }) {
         <span>{titre}</span>
 
         <FontAwesomeIcon
-          className="btnFleche"
-          icon={isOpen ? faChevronUp : faChevronDown}
+          className={`btnFleche ${isOpen ? "active" : ""}`}
+          icon={faChevronUp}
         />
       </div>
 

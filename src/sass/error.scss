@@ -12,10 +12,31 @@
    color: $color-primary;
    font-size:288px;
 }
-h2{
+.errorContainer h2{
     color: $color-primary;
    
 }
-.Link{
+.errorContainer a{ 
     font-size: small;
+    color: black;
+}
+
+@media (max-width: 767.98px) and (min-width:320px){
+    .errorContainer h2{
+        font-size: medium;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 80px;
+        margin-top: 50px;
+       
+    }
+    .errorContainer div{
+        font-size: 96px;
+        margin-top: 50px;
+       
+    }
+    .errorContainer{
+        margin-bottom: 40px;
+    }
 }

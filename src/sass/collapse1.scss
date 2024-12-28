@@ -1,0 +1,52 @@
+@import './index.scss';
+
+.barre{
+    width: 100%;
+} 
+ .critere {
+    @include infoBar  
+    
+}
+.critere span{
+    padding-left: 10px;
+    font-weight: 700; 
+}
+
+/*effet de glissement pour collapse*/
+.infoZone { 
+    width: 100%;
+    text-align:justify;
+    transition: all 1s ease ;   
+    background-color: #f6f6f6;  
+
+    opacity: 0; 
+    height: 0; 
+    overflow: hidden; 
+    transform: translateY(-3.5px);  
+    transition: all 0.4s ease-in-out;    
+    
+}
+.infoZone div{
+    display: none;
+} 
+.infoZone.open {
+    padding-left: 0; 
+    height: 100px;  
+    opacity: 1;
+    transform: translateY(0);  
+     
+}
+.infoZone.open div{
+    padding: 20px 20px 0 20px;   
+    display: block; 
+}
+
+/*.infoZone.open{  transition: ease-in-out 1s ;    
+}*/
+
+ .btnFleche{
+    @include btnFleche 
+}
+ .btnFleche.active{
+    transform: translateX(-20%) rotate(-180deg);   
+} 

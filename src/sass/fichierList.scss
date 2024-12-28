@@ -4,7 +4,7 @@
   @include linkFiche 
 }
 .ficheItem {
-  height: 340px;    
+  height: 100%;    
   width: 100%;           
   display: flex;              /* Active Flexbox interne */
   align-items: flex-end;       /* Aligne le texte en bas */
@@ -12,10 +12,16 @@
   color: black;                
   font-size: 16px;  
   border-radius: 8px;         
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
-  margin-top: 20px;
-  margin-bottom: 20px;
-  overflow: hidden;        /* Cache tout débordement (utile si la photo dépasse) */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  
+  overflow: hidden;   
+      
+  /*card avec dégradation de couleur*/
+  background: linear-gradient(
+    180deg, 
+    rgba(255, 255, 255, 0) 0%,
+    rgba(10, 10, 10, 0) 42%,  
+    rgba(4, 4, 4, 0.205) 99.99%, 
+    rgba(0, 0, 0, 0.5) 100% )
 
 }
 .coverPhoto {
@@ -30,17 +36,17 @@
   margin-left: 8px;
   display: inline-block;
   width: 15%; 
-  color: black;
+  color: white;
 }
 .fichiers {
     width: 90%;
     display: grid;
 	 grid-template-columns: 1fr 1fr 1fr;
-	 grid-column-gap: 15px;
-	  grid-row-gap: 15px;
+	 grid-column-gap: 35px;
+	  grid-row-gap: 35px; 
     justify-items: center; /* Aligne les éléments horizontalement */
     align-items: center; 
-
+    padding: 30px; 
     border-radius: 25px;
     background-color: #f6f6f6; 
     margin: auto;
@@ -57,8 +63,9 @@
   .fichiers{
     display: flex;
     flex-direction: column;
+    padding: 10px;
   }
-  .ficheItem {
+  .lienFiche {
     height: 255px;
   }
   .ficheItem span{

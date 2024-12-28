@@ -22,7 +22,7 @@ root.render(
       <Route path="/apropos" element={<Apropos />} />
       <Route path="*" element={<Error />} />
       </Routes>
-      <Footer /> 
+      <Footer />  
     </Router>
   </React.StrictMode>
 )

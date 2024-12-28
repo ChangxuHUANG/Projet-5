@@ -13,13 +13,12 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { useState } from "react";
 import "../../sass/logements.scss";
+import Collapse1 from "../../components/Collapse1";
 
 function Logements() {
   const { id } = useParams();
   console.log(id);
   const appartementInfo = fichierList.find((logement) => logement.id === id);
-  const [isOpen1, setIsOpen1] = useState(false);
-  const [isOpen2, setIsOpen2] = useState(false);
   const navigate = useNavigate();
 
   const idVerifie = fichierList.find((logement) => logement.id === id);
@@ -78,48 +77,18 @@ function Logements() {
         </section>
         <section className="information2">
           <div className="infoPrecise">
-            <section className="zoneInfo">
-              <div
-                className="barPresentation"
-                onClick={() => setIsOpen1(!isOpen1)}
-              >
-                <span>Description</span>
-
-                <FontAwesomeIcon
-                  className={`btnFleche ${isOpen1 ? "active" : ""}`}
-                  icon={faChevronUp}
-                />
-              </div>
-
-              {isOpen1 && (
-                <div className="infoPresentation">
-                  {appartementInfo.description}
-                </div>
-              )}
-            </section>
-            <section className="zoneInfo">
-              <div
-                className="barPresentation"
-                onClick={() => setIsOpen2(!isOpen2)}
-              >
-                <span>Équipement</span>
-
-                <FontAwesomeIcon
-                  className={`btnFleche ${isOpen2 ? "active" : ""}`}
-                  icon={faChevronUp}
-                />
-              </div>
-
-              {isOpen2 && (
-                <div className="infoPresentation">
-                  <ul>
-                    {appartementInfo.equipments.map((equipement) => (
-                      <li key={equipement}>{equipement}</li>
-                    ))}
-                  </ul>
-                </div>
-              )}
-            </section>
+            <div className="zoneInfo">
+              <Collapse1
+                description={appartementInfo.description}
+                titre="Description"
+              />
+            </div>
+            <div className="zoneInfo">
+              <Collapse1
+                titre="Equipement"
+                description={appartementInfo.equipments}
+              />
+            </div>
           </div>
         </section>
       </div>

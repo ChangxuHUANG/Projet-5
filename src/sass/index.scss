@@ -4,7 +4,8 @@ $color-primary: #FF6060;
  
 @mixin linkFiche {
   display: inline-block; 
-  width: 340px; 
+  width: 100%; 
+  height: 340px;
  }
 
 @mixin homePhoto {
@@ -34,7 +35,7 @@ $color-primary: #FF6060;
   margin-bottom: 10px;
 }
 @mixin infoBar{
-  width: 70%;
+  width: 100%;
   height: 50px;
   color: white;
   background-color: $color-primary;     
@@ -43,7 +44,6 @@ $color-primary: #FF6060;
   flex-direction: row;
   justify-content:space-between;
   align-items: center;
-  margin-bottom: 10px;
   
 }
 @mixin btnFleche{
